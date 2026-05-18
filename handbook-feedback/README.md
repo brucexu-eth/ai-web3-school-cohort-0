@@ -42,4 +42,5 @@ Use `TEMPLATE.md`. Each item should include:
 
 | Date | Page | Type | Status |
 |---|---|---|---|
+| 2026-05-18 | Web3 Tool Use | Missing Agentic Checkout example | Draft |
 | 2026-05-18 | Feedback workflow | Setup | Active |

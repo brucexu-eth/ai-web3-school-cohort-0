@@ -29,13 +29,32 @@ Reason: electronics are familiar, plausible for online purchase, relatively low 
 
 ## Why ETH
 
-ETH is the native asset for the story: a user should be able to express a purchase budget in ETH, not only in fiat or stablecoins. The system may still route through LI.FI or another payment path if the merchant requires a different token or chain.
+ETH is the native asset for the story: a user should be able to express a purchase budget in ETH, not only in fiat or stablecoins. The system may still route through LI.FI, Bitrefill, or another payment path if the merchant requires a different token, chain, or invoice format.
 
 Important distinction:
 
 - **User intent denomination**: ETH.
-- **Payment route**: may be ETH direct, ETH → stablecoin, or cross-chain route through LI.FI.
+- **Payment route**: may be ETH direct, ETH → stablecoin, Bitrefill-style invoice / voucher purchase, or cross-chain route through LI.FI.
 - **Agent authority**: can prepare quote / route / transaction draft, but cannot spend without explicit user confirmation or a narrow policy.
+
+## Possible implementation route — Bitrefill
+
+A friend recommended **Bitrefill** as a possible practical checkout path. This is worth evaluating before building a fully mocked merchant layer.
+
+Potential fit:
+
+- It may provide a real crypto checkout surface without requiring custom merchant integrations.
+- Electronics-related purchases may be represented indirectly through gift cards / vouchers.
+- It keeps the demo focused on Agent workflow: intent parsing, privacy filtering, quote/invoice preparation, user confirmation, wallet handoff, explorer verification, and audit receipt.
+
+Questions to verify:
+
+- Which Bitrefill products match the electronics demo?
+- Which regions and merchants are available?
+- Which assets/chains are supported for payment, and can the user express the budget in ETH?
+- What user data is required: email, phone, IP, account, shipping/contact details, wallet address, order history?
+- Can Hermes stop at quote / invoice / transaction-draft stage before real payment?
+- Does the flow produce enough receipt data for audit without over-disclosing private data?
 
 ## Product architecture
 
@@ -43,8 +62,8 @@ Important distinction:
 User intent
 → Intent Parser
 → Privacy Policy Layer
-→ Merchant / Product Adapter
-→ Payment Route Planner (ETH / LI.FI)
+→ Merchant / Product Adapter (mock or Bitrefill)
+→ Payment Route Planner (ETH / Bitrefill / LI.FI)
 → Risk + Privacy Summary
 → Human Confirmation
 → Wallet / Smart Account Handoff
@@ -150,6 +169,7 @@ Must demonstrate:
 
 Optional:
 
+- Bitrefill checkout / invoice research.
 - LI.FI quote API integration.
 - Mock merchant checkout.
 - Transaction draft generation.

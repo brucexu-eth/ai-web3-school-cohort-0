@@ -47,7 +47,9 @@ Last updated: 2026-05-18
 
 Selected direction: **Private Agentic Checkout**.
 
-Thesis: personal Agents will buy goods for users, but Agentic Commerce needs a privacy and permission layer before payment execution. The project demonstrates an ETH-denominated electronics purchase flow where Hermes prepares the checkout, LI.FI or a mock route plans payment, a privacy policy minimizes personal-data disclosure, and an audit receipt records what was authorized.
+Thesis: personal Agents will buy goods for users, but Agentic Commerce needs a privacy and permission layer before payment execution. The project demonstrates an ETH-denominated electronics purchase flow where Hermes prepares the checkout, Bitrefill / LI.FI / a mock route plans payment, a privacy policy minimizes personal-data disclosure, and an audit receipt records what was authorized.
+
+Implementation lead to evaluate: **Bitrefill** may be a practical route for the demo if it supports a relevant electronics-related gift card / voucher / invoice flow with acceptable privacy and payment boundaries.
 
 Primary track fit:
 

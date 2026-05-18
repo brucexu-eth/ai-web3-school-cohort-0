@@ -1,0 +1,32 @@
+# Feedback: Add detailed Web3 Tool Use example for Agentic Checkout
+
+- **Date**: 2026-05-18
+- **Handbook page**: https://aiweb3.school/zh/handbook/bridge/web3-tool-use/
+- **Problem type**: missing example / structure suggestion
+- **Source quote or section**:
+  > Web3 Tool Use chapter — tool categories and Web3 tool usage boundaries.
+- **Problem description**:
+  - The chapter explains Web3 tools conceptually, but builders would benefit from a concrete end-to-end example that shows where read-only tools, draft tools, policy gates, wallet tools, DeFi tools, and contract writes sit in the same workflow.
+  - The most important ambiguity is not whether the Agent can call a tool, but which tools are safe to call autonomously, which need policy checks, and which require explicit user confirmation.
+- **Suggested change**:
+  - Add an Agentic Checkout example, such as: “User asks an Agent to buy a small electronics item with ETH.”
+  - Show a concrete tool set:
+    - Tool log;
+    - Tool permissions;
+    - balance query;
+    - transaction draft;
+    - small-amount whitelist payment;
+    - DeFi route / swap / bridge;
+    - explorer verification;
+    - wallet action;
+    - contract read;
+    - contract write.
+  - Mark each tool as read-only, draft-only, policy-gated, or write-capable.
+  - Explicitly label dangerous tools: Tool permissions, DeFi tool, Wallet tool, Contract write.
+  - Include one worked flow: quote → transaction draft → simulation → combined user approval card → wallet handoff → explorer verification → audit receipt.
+- **Why this matters for builders**:
+  - It prevents the common mistake of treating wallet confirmation as the only safety boundary.
+  - It makes permission design, audit logs, simulation, and confirmation points concrete.
+  - It helps builders distinguish harmless reads from actions that can leak privacy or move funds.
+- **Status**: draft
+- **Related daily note**: ../daily/2026-05-18.md
