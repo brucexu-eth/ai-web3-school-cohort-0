@@ -45,14 +45,35 @@ Last updated: 2026-05-18
 
 ## Phase 3 — Project / Hackathon direction
 
-Choose one concrete prototype direction after the Bridge pass:
+Selected direction: **Private Agentic Checkout**.
 
-1. **Read-only DAO proposal research Agent** — lower asset risk, strong governance fit.
-2. **Chain-aware transaction explainer** — strong context/citation discipline, good demo surface.
-3. **Agent wallet permission simulator** — directly tests session keys, policy, human-in-the-loop, and trace.
-4. **Web3 Agent eval harness** — high leverage dev tooling: regression cases for wrong-chain, infinite approve, stale oracle, prompt injection, user rejection.
+Thesis: personal Agents will buy goods for users, but Agentic Commerce needs a privacy and permission layer before payment execution. The project demonstrates an ETH-denominated electronics purchase flow where Hermes prepares the checkout, LI.FI or a mock route plans payment, a privacy policy minimizes personal-data disclosure, and an audit receipt records what was authorized.
 
-Decision rule: pick the direction with the clearest demo, safest scope, and best proof-of-work within one week.
+Primary track fit:
+
+1. **Agentic Commerce / Payment** — Agent prepares a purchase and crypto payment route.
+2. **AI Security / Privacy** — privacy layer controls what personal data, wallet identity, and payment context leave the user’s local Agent.
+
+Demo scenario:
+
+```text
+Hermes, buy me an electronics item under 0.02 ETH. Use ETH if possible. Do not expose my main wallet, real email, or unnecessary personal information.
+```
+
+Final deliverables:
+
+- product / protocol spec;
+- GitHub repo with schemas and examples;
+- small working prototype or mocked end-to-end flow;
+- demo video script;
+- research-style report on privacy risks in Agentic Commerce.
+
+Project docs:
+
+- `docs/private-agentic-checkout-brief.md`
+- `docs/private-agentic-checkout-daily-plan.md`
+
+Decision rule: keep the scope narrow enough for solo work. Do not build full e-commerce, full anonymity, or automatic wallet spending. Prove the core insight: **Agentic checkout approval must cover purchase intent, payment route, privacy disclosure, and audit receipt together.**
 
 ## Daily cadence
 
