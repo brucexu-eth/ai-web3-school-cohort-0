@@ -1,35 +1,29 @@
 # Learner Profile
 
-## 基本信息 | Basic Info
+## Basic info
 
 | Field | Value |
-|-------|-------|
-| **Name** | Bruce Xu |
-| **GitHub** | [@brucexu-eth](https://github.com/brucexu-eth) |
-| **Cohort** | Cohort 0 |
-| **Start Date** | 2026-05-17 |
+|---|---|
+| Name | Bruce Xu |
+| GitHub | [@brucexu-eth](https://github.com/brucexu-eth) |
+| Cohort | Cohort 0 |
+| Repo | https://github.com/brucexu-eth/ai-web3-school-cohort-0 |
+| Start date | 2026-05-17 |
+| Output language | 中文为主，必要时保留英文术语 |
 
-## 技能画像 | Skill Profile
+## Skill profile
 
-| Dimension | Level | Notes |
-|-----------|-------|-------|
-| **AI 基础** | 🟢 有基础 | LLM、Prompt、Context 等核心概念已了解 |
-| **Web3 基础** | 🟢 熟悉 | 密码学、钱包、智能合约、DeFi 等有实战经验 |
-| **编程能力** | 🟢 能独立开发 | 可独立完成项目开发 |
-| **目标方向** | 产品研究 + 开发 | 侧重 AI × Web3 交叉领域的产品理解与工程实现 |
-| **每日时间** | ~1 小时 | 聚焦一个概念 + 一个最小实践 |
-| **语言偏好** | 中英混合，偏向中文 | — |
+| Dimension | Current assumption | Notes |
+|---|---|---|
+| AI 基础 | 有基础 | 熟悉 LLM / prompt / agent 基本概念，但需要系统化到可评估、可回放、可执行的工程框架。 |
+| Web3 基础 | 熟悉 | 熟悉钱包、签名、智能合约、DeFi、治理和生态语境。 |
+| 编程能力 | 能独立开发 | 学习输出应优先转成可运行实验、流程图、schema、测试用例或项目 proposal。 |
+| 目标方向 | 产品研究 + 开发 + Hackathon 原型 | 重点不是泛泛学习概念，而是找到可构建、可验证、可展示的问题。 |
+| 每日时间 | 默认 60 分钟 | 每天一个核心概念 + 一个最小实践；时间不足时只做最小路径。 |
 
-## 学习目标 | Learning Goals
+## Learning strategy
 
-1. **系统掌握 AI × Web3 Bridge 层知识** — Agent 工作流、链感知上下文、智能体钱包等
-2. **产出可验证的 Proof-of-Work** — 每日笔记、实验代码、Handbook Feedback
-3. **参与 Hackathon / 开源项目** — 将学习转化为实际构建
-4. **沉淀可复用材料** — 为社区贡献学习记录和反馈
-
-## 学习策略 | Strategy
-
-- Web3 已熟悉 → AI 基础和 Bridge 层为重点投入区
-- 每天 1h → **1 个概念 + 1 个最小实践** 的节奏
-- Handbook 为主轴，WCB 课程为节奏引导
-- 遇到问题即时记录到 `handbook-feedback/` 形成闭环
+- Web3 不从零学；只在 Agent 权限、账户抽象、钱包安全、结算和可验证记录处补关键缺口。
+- AI 不停留在 prompt；重点转向 tool use、workflow、state、eval、trace、guardrail。
+- 主线优先级：**Chain-aware Context → Web3 Tool Use → Agent Workflow → Agent Wallet → Payment / Settlement → Security / Privacy / Verifiable AI**。
+- 每日输出必须能沉淀到 repo：daily note、task note、feedback、实验或 proposal。

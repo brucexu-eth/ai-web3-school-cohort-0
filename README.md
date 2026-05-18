@@ -1,40 +1,53 @@
 # AI × Web3 School — Learning Journal
 
-> Personal learning journal and **proof-of-work** for [AI × Web3 School](https://aiweb3.school/zh/handbook/).
+Personal learning journal and **proof-of-work** for [AI × Web3 School](https://aiweb3.school/zh/handbook/).
 
-## 📖 Resources
+## Resources
 
 | Resource | Link |
-|----------|------|
-| **Handbook** | https://aiweb3.school/zh/handbook/ |
-| **WCB Course** | https://web3career.build/zh/programs/AI-Web3-School |
-| **WCB Learning** | https://web3career.build/zh/programs/AI-Web3-School#tab=learning |
+|---|---|
+| Handbook | https://aiweb3.school/zh/handbook/ |
+| WCB Course | https://web3career.build/zh/programs/AI-Web3-School |
+| WCB Learning | https://web3career.build/zh/programs/AI-Web3-School#tab=learning |
+| WCB Agent API docs | https://web3career.build/llms.txt |
 
-## 📁 Directory Structure
+## What this repo is for
 
-```
-├── README.md              # This file
-├── profile.md             # Learner profile & goals
-├── learning-plan.md       # Personalized learning plan
-├── daily/                 # Daily learning notes (YYYY-MM-DD.md)
-├── tasks/                 # Task-specific notes & deliverables
+- Track daily learning notes and check-in drafts.
+- Convert questions, bugs, and unclear concepts into Handbook feedback.
+- Keep small experiments and project/proposal materials as public proof-of-work.
+- Preserve links to WCB submissions without storing secrets or private data.
+
+## Directory structure
+
+```text
+├── README.md
+├── profile.md
+├── learning-plan.md
+├── daily/                 # Daily learning notes: YYYY-MM-DD.md
+├── tasks/                 # Task-specific notes and deliverables
 ├── experiments/           # Code experiments, PoC, sandbox
-├── handbook-feedback/     # Feedback on Handbook (issues, suggestions)
+├── handbook-feedback/     # Feedback on Handbook pages
 ├── hackathon/             # Hackathon project materials
-├── submissions/           # Formal submissions to WCB / platform
-└── templates/             # Reusable templates
-    ├── daily-note.md      # Daily note template
-    └── task-note.md       # Task note template
+├── submissions/           # Formal submission records / links
+└── templates/             # Reusable note templates
 ```
 
-## ⚠️ Privacy Notice
+## Privacy notice
 
-This is a **public repository**. Do NOT commit:
-- API keys, secrets, or tokens
-- Mnemonic phrases or private keys
-- Personal contact info (unless intentionally public)
-- Internal meeting links or others' personal data
+This is a **public repository**. Do **not** commit:
 
-## 📄 License
+- API keys, secrets, tokens, passwords, OAuth codes.
+- Mnemonic phrases, private keys, seed phrases, wallet screenshots.
+- Non-public personal contact info.
+- Internal meeting links or other people's personal data.
+- Private deal / client / employer information.
 
-This repository is for personal learning. Content may be referenced under fair use.
+## Daily operating loop
+
+1. Open WCB Learning and confirm today's task / meeting / check-in link.
+2. Read the relevant Handbook chapter(s).
+3. Create or update `daily/YYYY-MM-DD.md`.
+4. If a question or issue appears, add it under `handbook-feedback/`.
+5. Draft check-in text here, then manually submit on WCB / check-in platform.
+6. Paste the final submission link back into the daily note.

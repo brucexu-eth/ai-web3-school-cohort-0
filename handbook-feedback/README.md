@@ -1,28 +1,45 @@
 # Handbook Feedback
 
-> 学员在学习过程中对 Handbook 的反馈汇总。
-> 每条反馈包含页面链接、问题描述、建议改法和日期。
+Feedback from daily learning goes here. The goal is to make questions, unclear explanations, outdated material, typos, and structural suggestions easy to index and eventually upstream.
 
-## 如何添加 Feedback
+## When to create feedback
 
-在 `handbook-feedback/` 目录下创建文件，命名格式：`YYYY-MM-DD-简短标题.md`
+Create a feedback item when one of these appears:
 
-## 模板
+- A concept is ambiguous or under-specified.
+- A page lacks an example, diagram, minimal practice, or risk boundary.
+- A link or statement seems outdated.
+- A typo / formatting issue exists.
+- A chapter would benefit from a concrete AI × Web3 case.
 
-```markdown
-# Feedback: {标题}
+## File naming
 
-- **日期**: YYYY-MM-DD
-- **Handbook 页面**: https://aiweb3.school/zh/handbook/...
-- **问题类型**: 错别字 / 概念不清 / 资料过期 / 结构建议 / 其他
-- **问题描述**:
-- **建议改法**:
-- **来源**: （哪段话 / 哪个例子引起的问题）
+Use:
+
+```text
+handbook-feedback/YYYY-MM-DD-short-title.md
 ```
 
-## 反馈列表
+Example:
 
-| 日期 | 页面 | 类型 | 状态 |
-|------|------|------|------|
-|（暂无）| | | |
-``
+```text
+handbook-feedback/2026-05-18-web3-tool-permission-example.md
+```
+
+## Required fields
+
+Use `TEMPLATE.md`. Each item should include:
+
+- Handbook page URL.
+- Problem type.
+- Exact source quote or section.
+- Problem description.
+- Suggested change.
+- Why it matters for builders.
+- Status.
+
+## Feedback list
+
+| Date | Page | Type | Status |
+|---|---|---|---|
+| 2026-05-18 | Feedback workflow | Setup | Active |
